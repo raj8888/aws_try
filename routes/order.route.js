@@ -1,6 +1,6 @@
 const express=require('express')
 const {sequelize}=require("../config/server")
-const {orderModel}=require("../model/order.models")
+const {orderModel}=require("../models/order.models")
 let {authenticate}=require("../middlewares/authentication .middleware")
 const { where } = require('sequelize')
 const { compareSync } = require('bcrypt')
