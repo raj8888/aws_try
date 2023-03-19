@@ -1,7 +1,7 @@
 const jwt=require('jsonwebtoken')
 
 const authenticate=async(req,res,next)=>{
-    var token=req.headers.authorization?.split(" ")[1]
+    var token=req.headers.authorization.split(" ")[1]
     try {
         if(!token){
             res.send("Login First")
