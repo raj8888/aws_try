@@ -1,9 +1,9 @@
 module.exports={
     myData:{
-        username:"root",
-        password:"Raj@8080680",
-        database:"nxm301Evalone",
-        host:"localhost",
+        username:"admin",
+        password:"Raj8080680",
+        database:"awsTry",
+        host:"database-1.cliqxguxrdcj.ap-south-1.rds.amazonaws.com",
         dialect:"mysql"
     }
 }
