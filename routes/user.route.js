@@ -2,7 +2,7 @@ const express=require('express')
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
 const {sequelize}=require("../config/server")
-const {userModel}=require("../model/user.model")
+const {userModel}=require("../models/user.model")
 const userRouter=express.Router()
 
 userRouter.post("/signup",async(req,res)=>{
