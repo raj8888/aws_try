@@ -1,0 +1,9 @@
+module.exports={
+    myData:{
+        username:"root",
+        password:"Raj@8080680",
+        database:"nxm301Evalone",
+        host:"localhost",
+        dialect:"mysql"
+    }
+}

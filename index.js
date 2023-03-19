@@ -1,13 +1,16 @@
-const express=require("express")
-
+const express=require('express')
+const {sequelize}=require("./config/server")
+const {userRouter}=require("./routes/user.route")
+const {orderRouter}=require("./routes/order.route")
 const app=express()
 
 app.use(express.json())
-
-app.get('/hello',(req,res)=>{
-    res.send("Hello from server 2")
-})
+app.use("/users",userRouter)
+app.use("/order",orderRouter)
 
 app.listen(4500,()=>{
-    console.log("port is listing on port 4500")
+    sequelize.authenticate()
+    .then(()=>console.log("Connedted to db"))
+    .catch(()=>console.log("Not connected to db"))
+    console.log("Listning on port 4500")
 })
